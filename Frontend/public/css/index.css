@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic-65-002-rJfisI1mk8L0hY6gRQcsl7Z7W4RCEx.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.login-form {
+    background: linear-gradient(to right, #f97316, #ef4444);
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 320px;
+}
+.login-form-inner {
+    background-color: white;
+    padding: 24px;
+    border-radius: 7px;
+}
+.logo {
+    display: block;
+    margin: 0 auto 24px;
+    width: 100px;
+    height: 100px;
+}
+h2 {
+    text-align: center;
+    color: #f97316;
+    margin-bottom: 24px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #fdba74;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+    border-color: #f97316;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #dc2626;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 16px;
+}
+.forgot-password a {
+    color: #f97316;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
