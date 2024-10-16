@@ -14,6 +14,10 @@ function submitLogin() {
     })
         .then(response => response.json())
         .then(data => {
+            document.getElementById('resultS').innerHTML = '';
+            document.getElementById('resultE').innerHTML = '';
+            document.getElementById('message').innerText = ''; // เคลียร์ข้อความเก่าด้วย
+
 
             if (data.status == true) {
                 if (data.type == "student") {
