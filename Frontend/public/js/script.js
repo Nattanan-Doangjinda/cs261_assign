@@ -24,8 +24,9 @@ function submitLogin() {
                     document.getElementById('resultS').innerHTML = `<p>ชื่อ-นามสกุล: ${data.displayname_th}</p>
                     <p>Name: ${data.displayname_en}</p>
                     <p>Email: ${data.email}</p>
+                    <p>Faculty: ${data.faculty}</p>
                     <p>Department: ${data.department}</p>
-                    <p>Faculty: ${data.faculty}</p>`;
+                    `;
 
                 } else if (data.type == "Employee") {
                     document.getElementById('resultE').innerHTML = `<p>ชื่อ-นามสกุล: ${data.displayname_th}</p>
