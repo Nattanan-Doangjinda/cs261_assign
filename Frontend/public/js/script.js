@@ -21,10 +21,12 @@ function submitLogin() {
 
             if (data.status == true) {
                 if (data.type == "student") {
+                    document.getElementById('message').innerText = data.message;
                     document.getElementById('resultS').innerHTML = `<p>ชื่อ-นามสกุล: ${data.displayname_th}</p>
                     <p>Name: ${data.displayname_en}</p>
                     <p>Email: ${data.email}</p>
                     <p>Faculty: ${data.faculty}</p>
+                    
                     <p>Department: ${data.department}</p>
                     `;
 
