@@ -14,8 +14,8 @@ function submitLogin() {
     })
         .then(response => response.json())
         .then(data => {
-            document.getElementById('resultS').innerHTML = ' ';
-            document.getElementById('resultE').innerHTML = ' ';
+            document.getElementById('resultS').innerHTML = '';
+            document.getElementById('resultE').innerHTML = '';
             document.getElementById('message').innerText = '';
 
 
